@@ -6,8 +6,6 @@ Requires=rpcbind.service
 [Service]
 Type=forking
 EnvironmentFile=/etc/conf.d/nfs-server.conf
-ExecStartPre=/sbin/modprobe auth_rpcgss
-ExecStartPre=/sbin/modprobe rpcsec_gss_krb5
 ExecStart=/usr/sbin/rpc.svcgssd $SVCGSSD_OPTS
 
 [Install]
