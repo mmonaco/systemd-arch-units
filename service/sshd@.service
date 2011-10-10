@@ -8,5 +8,4 @@ After=sshdgenkeys.service
 ExecStart=-/usr/sbin/sshd -i
 ExecReload=/bin/kill -HUP $MAINPID
 StandardInput=socket
-StandardOutput=socket
 StandardError=syslog

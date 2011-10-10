@@ -5,5 +5,4 @@ Description=vsftpd per-connection server
 ExecStart=-/usr/sbin/vsftpd
 ExecReload=/bin/kill -HUP $MAINPID
 StandardInput=socket
-StandardOutput=socket
 StandardError=syslog
