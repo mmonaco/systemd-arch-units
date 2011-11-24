@@ -4,6 +4,5 @@ After=sshdgenkeys.service
 
 [Service]
 ExecStart=-/usr/sbin/sshd -i
-ExecReload=/bin/kill -HUP $MAINPID
 StandardInput=socket
 StandardError=syslog
