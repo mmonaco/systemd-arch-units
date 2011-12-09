@@ -1,9 +1,9 @@
 [Unit]
-Description=IRQ Balancing Daemon
+Description=CPU Interrupt Balancer
 
 [Service]
 Type=forking
-EnvironmentFile=/etc/conf.d/irqbalance
+GuessMainPID=yes
 ExecStart=/usr/sbin/irqbalance
 
 [Install]
