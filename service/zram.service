@@ -1,0 +1,11 @@
+[Unit]
+Description=Compressed RAM block devices
+
+[Service]
+Type=oneshot
+ExecStart=/lib/systemd/scripts/zramctrl start
+ExecStop=/lib/systemd/scripts/zramctrl stop
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
