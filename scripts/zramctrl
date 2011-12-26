@@ -13,7 +13,7 @@ start() {
   }
 
   END {
-    mem_per_cpu = mem_total / cpucount
+    mem_per_cpu = sprintf("%d", mem_total / cpucount)
 
     system("modprobe zram num_devices=" cpucount)
 
