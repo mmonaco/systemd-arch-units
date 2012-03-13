@@ -58,7 +58,9 @@ include the units.
 branch for your work off of master and create a single commit for each unit
 file. If you need to make revisions, rebase and squash them into a single
 commit.
-4) Test your work. I cannot stress this enough.
+4) I WILL NOT, under any circumstances, accept tmpfiles with your services
+if the managed files/directories are not root owned. Zero exceptions.
+5) Test your work. I cannot stress this enough.
 
 
 LEGAL CRAP
