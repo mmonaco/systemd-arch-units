@@ -1,0 +1,9 @@
+[Unit]
+Description=I8kmon - Monitor the cpu temperature and fan status on Dell laptops
+ConditionPathExists=/proc/i8k
+
+[Service]
+ExecStart=/usr/bin/i8kmon -nd
+
+[Install]
+WantedBy=multi-user.target
